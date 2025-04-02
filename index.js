@@ -11,7 +11,6 @@ const corsOptions = {
 }
 
 app.use(cors(corsOptions));
-app.use(bodyParser.json());
 
 app.all("/proxy", (req, res) => {
     const url = req.query.url;
